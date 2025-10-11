@@ -1,4 +1,4 @@
-// Carrossel simples
+
 let index = 0;
 const slides = document.querySelectorAll(".slide");
 
@@ -17,7 +17,7 @@ document.getElementById("prev").addEventListener("click", () => {
   mostrarSlide(index);
 });
 
-// Validação simples do formulário
+
 document.getElementById("form-contato").addEventListener("submit", e => {
   e.preventDefault();
   const nome = document.getElementById("nome").value.trim();
