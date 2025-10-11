@@ -56,7 +56,6 @@ body {
   color: #ffd700;
 }
 
-/* Hero */
 .hero {
   display: flex;
   align-items: center;
@@ -90,7 +89,6 @@ body {
   width: 400px;
 }
 
-/* Botões */
 .btn {
   background-color: #ffd700;
   color: #333;
@@ -105,7 +103,6 @@ body {
   background-color: #ffcb05;
 }
 
-/* Seções */
 section {
   padding: 5rem 0;
   text-align: center;
@@ -116,7 +113,6 @@ h2 {
   margin-bottom: 2rem;
 }
 
-/* Cards */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
