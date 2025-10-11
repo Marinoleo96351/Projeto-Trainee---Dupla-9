@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pindorama Pets - Clínica Veterinária</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Pindorama Pets</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#campanhas">Campanhas</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h2>Cuidamos com amor do seu melhor amigo</h2>
+        <p>Atendimento especializado, exames, vacinas e muito carinho para o seu pet!</p>
+        <a href="#contato" class="btn">Agendar Consulta</a>
+      </div>
+      <div class="hero-img">
+        <img src="img/hero-pet.png" alt="Veterinário com cachorro">
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="container grid">
+      <div class="card">
+        <img src="img/consulta.png" alt="Consulta">
+        <h3>Consultas</h3>
+        <p>Atendimento clínico completo e personalizado para o seu pet.</p>
+      </div>
+      <div class="card">
+        <img src="img/exames.png" alt="Exames">
+        <h3>Exames</h3>
+        <p>Equipamentos modernos para diagnósticos rápidos e precisos.</p>
+      </div>
+      <div class="card">
+        <img src="img/cirurgia.png" alt="Cirurgia">
+        <h3>Cirurgias</h3>
+        <p>Segurança e cuidado em todos os procedimentos cirúrgicos.</p>
+      </div>
+      <div class="card">
+        <img src="img/banho.png" alt="Banho e tosa">
+        <h3>Banho e Tosa</h3>
+        <p>Higiene e beleza com carinho e produtos de qualidade.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipe -->
+  <section id="equipe" class="equipe">
+    <h2>Nosso Time</h2>
+    <div class="container grid">
+      <div class="card">
+        <img src="img/vet1.png" alt="Veterinária">
+        <h3>Dra. Ana Souza</h3>
+        <p>Clínica Geral</p>
+      </div>
+      <div class="card">
+        <img src="img/vet2.png" alt="Veterinário">
+        <h3>Dr. Carlos Lima</h3>
+        <p>Cirurgião Veterinário</p>
+      </div>
+      <div class="card">
+        <img src="img/vet3.png" alt="Veterinária">
+        <h3>Dra. Júlia Torres</h3>
+        <p>Especialista em Felinos</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Campanhas -->
+  <section id="campanhas" class="campanhas">
+    <h2>Campanha de Vacinação</h2>
+    <div class="container carrossel">
+      <button class="btn-carrossel" id="prev">‹</button>
+      <div class="carrossel-slides">
+        <img src="img/campanha1.png" class="slide ativo" alt="Vacinação 1">
+        <img src="img/campanha2.png" class="slide" alt="Vacinação 2">
+        <img src="img/campanha3.png" class="slide" alt="Vacinação 3">
+      </div>
+      <button class="btn-carrossel" id="next">›</button>
+    </div>
+  </section>
+
+  <!-- Avaliações -->
+  <section class="avaliacoes">
+    <h2>O que nossos clientes dizem</h2>
+    <div class="container grid">
+      <div class="card">
+        <p>“Atendimento excelente! Cuidaram com muito carinho do meu cachorro.”</p>
+        <h4>– Maria Oliveira</h4>
+      </div>
+      <div class="card">
+        <p>“Equipe muito atenciosa e competente. Recomendo!”</p>
+        <h4>– João Santos</h4>
+      </div>
+      <div class="card">
+        <p>“Ambiente limpo e acolhedor. Me senti segura deixando meu gato lá.”</p>
+        <h4>– Carla Mendes</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="contato">
+    <h2>Fale Conosco</h2>
+    <div class="container contato-grid">
+      <form id="form-contato">
+        <input type="text" id="nome" placeholder="Seu nome" required>
+        <input type="email" id="email" placeholder="Seu e-mail" required>
+        <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+      <div class="contato-info">
+        <p>📍 Rua das Palmeiras, 123 – Pindorama</p>
+        <p>📞 (43) 99999-9999</p>
+        <p>✉️ contato@pindoramapets.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2025 Pindorama Pets - Todos os direitos reservados</p>
+    <div class="social">
+      <a href="#"><img src="img/insta.png" alt="Instagram"></a>
+      <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="img/whatsapp.png" alt="WhatsApp"></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
