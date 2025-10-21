@@ -13,20 +13,26 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 75%;
   max-width: 1200px;
   margin: auto;
 }
 
 /* Navbar */
 .navbar {
-  background-color: #1ba6a6;
+  background-color: #F8F8FF;
   padding: 1rem 0;
   color: #fff;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 100;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  display : block;
 }
 
 .navbar .logo {
@@ -47,8 +53,9 @@ body {
 }
 
 .nav-links a {
-  color: #fff;
+  color: #063643;
   text-decoration: none;
+  font-family: Poppins, sans-serif;
   transition: 0.3s;
 }
 
