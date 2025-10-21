@@ -364,6 +364,7 @@ footer {
 }
 
 .footer-info h4 {
+  text-align: left;
   margin-bottom: 15px;
   font-size: 15px;
   font-weight: bold;
@@ -371,16 +372,19 @@ footer {
 }
 
 .footer-info ul {
+  text-align: left;
   list-style: none;
   padding: 0;
 }
 
 .footer-info ul li {
+  text-align: left;
   margin-bottom: 10px;
   font-size: 15px;
 }
 
 .footer-info ul li a {
+  text-align: left;
   color: #063643;
   text-decoration: none;
   transition: 0.3s;
