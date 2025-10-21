@@ -342,14 +342,63 @@ textarea {
 }
 
 footer {
-  background-color: #1ba6a6;
-  color: #fff;
+  background-color: #F8F8FF;
+  color: #063643;
   text-align: center;
   padding: 1.5rem 0;
+  font-family: Poppins, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 0.7fr 0.7fr 1fr;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-logo-pindorama img{
+  width: 125px;
+  margin-bottom: 0px;
+  margin-left: 250px;
+}
+
+.footer-info h4 {
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #063643;
+}
+
+.footer-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-info ul li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.footer-info ul li a {
+  color: #063643;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 footer .social img {
   width: 24px;
   margin: 0 10px;
   filter: brightness(0) invert(1);
+}
+
+.footer-final {
+  background: #063643;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0;
+  font-size: 14px;
+  color: #fff
+  
+
 }
