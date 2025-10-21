@@ -63,56 +63,69 @@ body {
   color: #ffd700;
 }
 
-/* ===== Seção Hero ===== */
+/* ====== HERO SECTION ====== */
 .hero {
-  background-color: #f5fafc;
-  padding: 80px 0;
+  background-color: #e3f6f5;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
 }
 
-.hero-content {
+.hero-box {
+  background-color: #f8f9fb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 50px;
-  flex-wrap: wrap;
-}
-
-.hero-text {
-  max-width: 500px;
+  padding: 50px 60px;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .hero-text h2 {
-  color: #0a2a43;
+  color: #003b46;
   font-size: 2rem;
   font-weight: 700;
+  line-height: 1.4;
   margin-bottom: 30px;
 }
 
 .btn-hero {
-  display: inline-block;
-  background-color: #006b77;
+  background-color: #005a66;
   color: #fff;
-  padding: 14px 28px;
-  border-radius: 8px;
-  font-size: 1rem;
   font-weight: 600;
+  font-size: 1.1rem;
+  padding: 14px 32px;
+  border-radius: 8px;
   text-decoration: none;
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
 .btn-hero:hover {
-  background-color: #014c55;
+  background-color: #007a8a;
 }
 
 .hero-img img {
-  max-width: 550px;
+  max-width: 500px;
   width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
+
+@media (max-width: 900px) {
+  .hero-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .hero-img img {
+    max-width: 350px;
+  }
+}
 
 section {
   padding: 5rem 0;
