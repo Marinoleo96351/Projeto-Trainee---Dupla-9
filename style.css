@@ -63,52 +63,56 @@ body {
   color: #ffd700;
 }
 
+/* ===== Seção Hero ===== */
 .hero {
+  background-color: #f5fafc;
+  padding: 80px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8rem 0 4rem;
-  background: linear-gradient(90deg, #e0f7f6 0%, #ffffff 100%);
 }
 
 .hero-content {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
   flex-wrap: wrap;
-  gap: 2rem;
 }
 
 .hero-text {
-  flex: 1;
+  max-width: 500px;
 }
 
 .hero-text h2 {
-  font-size: 2.2rem;
-  color: #1ba6a6;
-  margin-bottom: 1rem;
+  color: #0a2a43;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
 
-.hero-text p {
-  margin-bottom: 1.5rem;
-  font-size: 1.1rem;
+.btn-hero {
+  display: inline-block;
+  background-color: #006b77;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn-hero:hover {
+  background-color: #014c55;
 }
 
 .hero-img img {
-  width: 400px;
+  max-width: 550px;
+  width: 100%;
+  height: auto;
 }
 
-.btn {
-  background-color: #ffd700;
-  color: #333;
-  padding: 0.8rem 1.5rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background-color: #ffcb05;
-}
 
 section {
   padding: 5rem 0;
