@@ -364,7 +364,7 @@ footer {
 .footer-logo-pindorama img{
   width: 125px;
   margin-bottom: 0px;
-  margin-left: 250px;
+  margin-left: 200px;
 }
 
 .footer-info h4 {
@@ -394,10 +394,18 @@ footer {
   transition: 0.3s;
 }
 
-footer .social img {
+.footer-info .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem; 
+  margin-bottom: 0.8rem;
+  margin-right: 180px;
+}
+
+.footer-info .social img {
   width: 24px;
-  margin: 0 10px;
-  filter: brightness(0) invert(1);
+  height: 24px;
 }
 
 .footer-final {
