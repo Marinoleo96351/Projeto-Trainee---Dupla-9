@@ -315,16 +315,76 @@ h2 {
   cursor: pointer;
 }
 
+.contato {
+  background: #E2F5FA;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.contato h2 {
+  margin-bottom: 2rem;
+  color: #063643;
+}
+
+.contato h4{
+  font-family: Poppins, sans-serif;
+  color:#063643
+}
+
+.contato-info p {
+  margin: 0.5rem 0;
+  color: #063643;
+  font-style: italic;
+}
+
 .contato-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  background: #F8F8FF;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  width: 85%;
+  max-width: 700px;
+  margin: auto;
+  overflow: hidden;
   justify-content: center;
   align-items: flex-start;
 }
 
+.contato-info, #form-contato{
+  flex: 1;
+  padding: 20px;
+  min-width: 20px;
+}
+
 .contato-info {
+  border-right: 1px solid #ccc;
   text-align: left;
+}
+
+.mapa-img {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.redes-sociais p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #063643;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.redes-sociais img {
+  width: 22px;
+  transition: 0.3s;
+}
+
+.redes-sociais img:hover {
+  transform: scale(1.1);
 }
 
 form {
@@ -340,6 +400,25 @@ input, textarea {
   border-radius: 6px;
 }
 
+#form-contato label {
+  text-align: left;
+  font-weight: 400;
+  color: #063643;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+}
+
+form button {
+  font-family: Poppins, sans-serif  ;
+  background: #063643;
+  color: #fff;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
 textarea {
   resize: none;
   height: 100px;
