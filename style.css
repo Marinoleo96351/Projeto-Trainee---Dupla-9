@@ -315,6 +315,81 @@ h2 {
   cursor: pointer;
 }
 
+.sobre {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: #89C5D5;
+  background-size: cover;
+  padding: 20px 0;
+}
+
+.quem-somos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 0 auto 60px;
+  width: 80%;
+  max-width: 1000px;
+}
+
+.quem-somos img {
+  width: 175px;
+  height: auto;
+}
+
+.texto-quem {
+  max-width: 600px;
+  text-align: left;
+  color: #063643
+}
+
+.texto-quem h2 {
+  color: #063643;
+  margin-bottom: 1rem;
+  font-family: Poppins, sans-serif;
+}
+
+.servicos {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.servicos h3 {
+  color: #063643;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: left;
+  margin-left: 120px;
+  font-family: Poppins, sans-serif;
+}
+
+.servico-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 30px;
+}
+
+.servico-item img {
+  width: 225px;
+  height: auto;
+  border-radius: 1px;
+}
+
+.servico-item p {
+  max-width: 500px;
+  text-align: left;
+  color: #063643;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+}
+
 .contato {
   background: #E2F5FA;
   padding: 4rem 0;
