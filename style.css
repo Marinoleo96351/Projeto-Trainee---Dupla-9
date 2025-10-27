@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -147,6 +147,11 @@ header .nav-menu li a:focus {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     overflow: hidden;
+    position: relative;
+}
+
+#hero::before {
+    display: none;
 }
 
 #hero .hero-content {
@@ -154,11 +159,15 @@ header .nav-menu li a:focus {
     align-items: center;
     justify-content: space-between;
     gap: 30px;
+    position: relative;
+    z-index: 10;
 }
 
 #hero .hero-text {
     flex: 0 1 45%;
     padding-right: 20px;
+    position: relative;
+    z-index: 15;
 }
 
 #hero .hero-text h1 {
@@ -175,6 +184,10 @@ header .nav-menu li a:focus {
 #hero .hero-image {
     flex: 0 1 55%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
 }
 
 #hero .hero-image img {
@@ -182,20 +195,35 @@ header .nav-menu li a:focus {
     height: auto;
     display: block;
     max-width: none;
+    z-index: 2;
 }
 
 .hero-lines {
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 120px;
-    height: 100px;
+    top: 0px;
+    right: 0px;
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    border: 2px solid #93CDE0;
+    transform: rotate(15deg);
+    transform-origin: top right;
+    overflow: hidden;
+    z-index: 1;
+}
+.hero-lines::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
     background: repeating-linear-gradient(
-        -45deg,
-        var(--cor-bloco-medio),
-        var(--cor-bloco-medio) 2px,
+        45deg,
+        #16718A,
+        #16718A 2px,
         transparent 2px,
-        transparent 12px
+        transparent 20px
     );
 }
 
@@ -207,41 +235,76 @@ header .nav-menu li a:focus {
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    height: 300px;
 }
 
 .slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 300%;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .slide {
     width: 100%;
+    height: 100%;
     flex-shrink: 0;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     position: absolute;
     top: 0;
     left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .slide.active {
     opacity: 1;
     position: relative;
+    z-index: 1;
+}
+
+#slide-vacinacao {
+    background-image: url('imagens/campanha_de_vacinação_fundo.png');
+    background-color: var(--cor-bloco-medio);
+}
+
+#slide-adocao {
+    background-image: url('imagens/Campanha_de_adocao_fundo.png');
+    background-color: var(--cor-bloco-escuro);
+}
+
+#slide-banho-tosa {
+    background-image: url('imagens/Banho_e_tosa_fundo.png');
+    background-color: var(--cor-fundo-card);
 }
 
 .slide-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    max-width: 50%;
+    position: relative;
+    z-index: 2;
     padding: 30px 60px;
-    min-height: 250px;
 }
+
+#slide-adocao .slide-content {
+    max-width: 60%;
+    padding: 60px 80px;
+}
+#slide-banho-tosa .slide-content {
+    max-width: 60%;
+}
+
 
 .slide-text {
     flex: 1;
-    max-width: 50%;
+    max-width: 100%;
     color: var(--cor-texto-claro);
+    text-align: left;
 }
 
 .slide-text.text-dark {
@@ -253,8 +316,9 @@ header .nav-menu li a:focus {
 
 .slide-text h2 {
     font-size: 2rem;
-    color: var(--cor-texto-claro);
+    color: inherit;
     margin-bottom: 15px;
+    text-align: left;
 }
 
 .slide-text p {
@@ -262,12 +326,6 @@ header .nav-menu li a:focus {
     color: inherit;
     margin-bottom: 25px;
     line-height: 1.5;
-}
-
-.slide-image {
-    max-width: 40%;
-    max-height: 220px;
-    object-fit: contain;
 }
 
 .slider-btn {
@@ -321,10 +379,10 @@ header .nav-menu li a:focus {
     background-color: rgba(255, 255, 255, 1);
 }
 
-.slide[style*="#FFFFFF"] ~ .slider-dots .dot {
+#slide-banho-tosa.active ~ .slider-dots .dot {
     background-color: rgba(0, 0, 0, 0.3);
 }
-.slide[style*="#FFFFFF"] ~ .slider-dots .dot.active {
+#slide-banho-tosa.active ~ .slider-dots .dot.active {
     background-color: var(--cor-bloco-escuro);
 }
 
@@ -531,7 +589,7 @@ header .nav-menu li a:focus {
     font-size: 1.8rem;
     font-weight: bold;
     color: var(--cor-bloco-escuro);
-    user-select: none; 
+    user-select: none;
 }
 
 .pagination-controls .hidden {
@@ -623,7 +681,7 @@ footer {
 }
 
 .footer-logo img {
-    width: 240px; 
+    width: 240px;
     margin-bottom: 20px;
 }
 
@@ -686,6 +744,102 @@ footer {
     font-size: 0.85rem;
 }
 
+.slide .slide-content .btn {
+    width: 283px;
+    height: 62px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#slide-vacinacao .slide-content .btn {
+    height: 72px;
+    background-color: #F8F8FF;
+    color: var(--cor-bloco-escuro);
+}
+#slide-vacinacao .slide-content .btn:hover {
+    background-color: #e9e9f2;
+    color: var(--cor-bloco-escuro);
+}
+#slide-vacinacao .slide-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#slide-vacinacao .slide-text p {
+     margin-bottom: 0;
+}
+
+#slide-adocao .slide-content .btn {
+    height: 62px;
+    background-color: var(--cor-fundo-card);
+    color: var(--cor-bloco-escuro);
+}
+#slide-adocao .slide-content .btn:hover {
+    background-color: #f1f1f1;
+    color: var(--cor-bloco-escuro);
+}
+#slide-adocao .slide-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#slide-adocao .slide-text p {
+     margin-bottom: 0;
+}
+#slide-adocao .slide-text h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 120%;
+    color: var(--cor-texto-claro);
+}
+#slide-adocao .slide-text p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 0;
+    color: var(--cor-texto-claro);
+    max-width: 500px;
+}
+
+#slide-banho-tosa .slide-content .btn {
+    height: 72px;
+    background-color: var(--cor-bloco-escuro);
+    color: var(--cor-texto-claro);
+}
+#slide-banho-tosa .slide-content .btn:hover {
+    background-color: #3a7c88;
+    color: var(--cor-texto-claro);
+}
+#slide-banho-tosa .slide-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#slide-banho-tosa .slide-text p {
+     margin-bottom: 0;
+}
+#slide-banho-tosa .slide-text h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+}
+#slide-banho-tosa .slide-text p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
 @media (max-width: 768px) {
     
     h2 {
@@ -706,6 +860,14 @@ footer {
         margin-left: 15px;
     }
 
+    #hero {
+        padding: 40px 20px;
+    }
+
+    #hero::before {
+        display: none;
+    }
+    
     #hero .hero-content {
         flex-direction: column;
         text-align: center;
@@ -725,21 +887,55 @@ footer {
         max-width: 100%;
     }
 
+    .hero-lines {
+        width: 150px;
+        height: 150px;
+        top: 10px;
+        right: 10px;
+        transform: rotate(10deg);
+    }
+
+    .slide {
+        padding: 20px;
+        justify-content: center;
+        background-size: cover;
+    }
+
     .slide-content {
-        flex-direction: column-reverse;
-        padding: 30px;
+        max-width: 100%;
         text-align: center;
+        padding: 30px 20px;
     }
     
     .slide-text {
         max-width: 100%;
+        align-items: center;
     }
-    
-    .slide-image {
-        max-width: 60%;
-        max-height: 150px;
-        margin-bottom: 20px;
+
+    .slide-text h2,
+    .slide-text p {
+        text-align: center;
     }
+
+    .slide .slide-content .btn {
+        width: 220px;
+        height: 50px;
+        font-size: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+    }
+    #slide-vacinacao .slide-content .btn { height: 55px; }
+    #slide-banho-tosa .slide-content .btn { height: 55px; }
+    #slide-adocao .slide-content .btn { height: 50px; }
+
+
+     #slide-vacinacao .slide-text h2,
+     #slide-adocao .slide-text h2 { font-size: 28px; }
+     #slide-vacinacao .slide-text p,
+     #slide-adocao .slide-text p { font-size: 16px; }
+     #slide-banho-tosa .slide-text h2 { font-size: 22px; }
+     #slide-banho-tosa .slide-text p { font-size: 16px; }
     
     .slider-btn {
         width: 30px;
