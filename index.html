@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pindorama Pets - Clínica Veterinária</title>
-    
+
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
 
     <header id="inicio">
@@ -28,237 +31,255 @@
 
     <main>
         <section id="hero">
-    <div class="container hero-content">
-        
-        <div class="hero-text">
-            <h1>Cuidando do Seu Pet com Profissionalismo e Carinho</h1>
-            <a href="#contato" class="btn">Entre em contato</a>
-        </div>
-        
-        <div class="hero-image">
-            <img src="imagens/todos os animais.png" alt="Grupo de cães e gatos">
-            
-            <div class="hero-lines"></div>
-        </div>
+            <div class="container hero-content">
 
-    </div>
-</section>
-
-        <section id="banners" class="slider-container">
-            <div class="slider">
-                
-                <div class="slide active" style="background-color: #7BC1CA;">
-                    <div class="slide-content">
-                        <div class="slide-text">
-                            <h2>Campanha de vacinação</h2>
-                            <p>Nos dias 19 a 28 de novembro</p>
-                            <a href="#" class="btn btn-light">Saiba mais</a>
-                        </div>
-                        <img src="img/banner-vacinacao.png" alt="Vacinação" class="slide-image">
-                    </div>
+                <div class="hero-text">
+                    <h1>Cuidando do Seu Pet com Profissionalismo e Carinho</h1>
+                    <a href="#contato" class="btn">Entre em contato</a>
                 </div>
 
-                <div class="slide" style="background-color: #FFFFFF;">
-                    <div class="slide-content">
-                        <div class="slide-text text-dark">
-                            <h2>Banho e tosa: cuidado e saúde para seu pet</h2>
-                            <p>Nossa clínica dispõe do serviço de higiene para seu Pet permanecer limpo, cheiroso e longe de parasitas.</p>
-                            <a href="#" class="btn">Saiba mais</a>
-                        </div>
-                        <img src="img/banner-banho-tosa.png" alt="Gato no banho" class="slide-image">
-                    </div>
+                <div class="hero-image">
+                    <img src="imagens/varios bichos.svg" alt="Grupo de cães e gatos">
+
+                    <div class="hero-lines"></div>
                 </div>
 
-                <div class="slide" style="background-color: #2A5A62;">
-                    <div class="slide-content">
-                        <div class="slide-text">
-                            <h2>Campanha de adoção</h2>
-                            <p>Dê um lar cheio de amor a quem só quer te fazer feliz! Adote um amigo de quatro patas e transforme sua vida e a dele.</p>
-                            <a href="#" class="btn btn-light">Saiba mais</a>
-                        </div>
-                        <img src="img/banner-adocao.png" alt="Cachorro e gato adoção" class="slide-image">
-                    </div>
-                </div>
-                
             </div>
-            
-            <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
-            <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
-            <div class="slider-dots">
-                </div>
         </section>
 
-        <section id="sobre-nos" class="section-padding-dark"> <div class="container about-content">
+        <section class="slider-container">
+            <div class="slider">
+
+                <div class="slide active" id="slide-vacinacao">
+                    <div class="slide-content">
+                        <div class="slide-text">
+                            <a href="#" class="btn btn-light">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide" id="slide-adocao">
+                    <div class="slide-content">
+                        <div class="slide-text">
+                            <a href="#" class="btn btn-light">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" id="slide-banho-tosa">
+                    <div class="slide-content">
+                        <div class="slide-text text-dark">
+                            <a href="#" class="btn">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-btn prev">&#10094;</button>
+                <button class="slider-btn next">&#10095;</button>
+
+                <div class="slider-dots"></div>
+        </section>
+
+        <section id="sobre-nos" class="section-padding-dark">
+            <div class="container about-content">
                 <div class="about-logo">
                     <img src="imagens/logo_quem_somos.png" alt="Pindorama Pets Logo">
                 </div>
                 <div class="about-text">
                     <h3>Quem somos?</h3>
-                    <p>Nossa clínica veterinária é comprometida com o cuidado e bem-estar de cada pet, com uma equipe dedicada e instalações modernas, buscamos garantir saúde e conforto em cada atendimento. Cuidamos do seu animalzinho como se fosse nosso!</p>
+                    <p>Nossa clínica veterinária é comprometida com o cuidado e bem-estar de cada pet, com uma equipe
+                        dedicada e instalações modernas, buscamos garantir saúde e conforto em cada atendimento.
+                        Cuidamos do seu animalzinho como se fosse nosso!</p>
                 </div>
             </div>
         </section>
 
-        <section id="servicos" class="section-padding"> <div class="container">
+        <section id="servicos" class="section-padding">
+            <div class="container">
                 <h2>Nossos serviços</h2>
                 <div class="service-item">
                     <img src="imagens/doutora_gato_nossosserviços.png" alt="Veterinária consultando gato">
-                    <p>Na nossa clínica veterinária, cada consulta é realizada com dedicação e atenção aos detalhes, garantindo o melhor cuidado para o seu pet. Contamos com uma equipe experiente e atualizada para oferecer diagnósticos precisos e tratamentos eficazes.</p>
+                    <p>Na nossa clínica veterinária, cada consulta é realizada com dedicação e atenção aos detalhes,
+                        garantindo o melhor cuidado para o seu pet. Contamos com uma equipe experiente e atualizada para
+                        oferecer diagnósticos precisos e tratamentos eficazes.</p>
                 </div>
                 <div class="service-item reverse">
                     <img src="imagens/Medica_golden.png" alt="Veterinária com cachorro golden">
-                    <p>Nós cuidamos do seu pet com o carinho e respeito que ele merece. Nossa equipe dedica atenção a cada detalhe, proporcionando um ambiente acolhedor e seguro para que seu animalzinho se sinta em casa.</p>
+                    <p>Nós cuidamos do seu pet com o carinho e respeito que ele merece. Nossa equipe dedica atenção a
+                        cada detalhe, proporcionando um ambiente acolhedor e seguro para que seu animalzinho se sinta em
+                        casa.</p>
                 </div>
             </div>
         </section>
 
-        <section id="profissionais" class="section-padding-light"> <div class="container">
+        <section id="profissionais" class="section-padding-light">
+            <div class="container">
                 <h2>Nossos profissionais</h2>
                 <div class="team-grid">
-                    
+
                     <div class="team-card">
                         <img src="imagens/carlos_de_souza.png" alt="Dr. Carlos De Souza">
                         <h4>Carlos De Souza</h4>
                         <p>Cirurgia Veterinária</p>
                     </div>
-                    
+
                     <div class="team-card">
                         <img src="imagens/Joao_paulo_medico.png" alt="Dr. João Paulo">
                         <h4>João Paulo</h4>
                         <p>Dermatologia Veterinária</p>
                     </div>
-                    
+
                     <div class="team-card">
                         <img src="imagens/jose_da_silva_medico.png" alt="Dr. José da Silva">
                         <h4>José da Silva</h4>
                         <p>Patologia</p>
                     </div>
-                    
+
                     <div class="team-card">
                         <img src="imagens/fulano_medico.png" alt="Dr. fulano">
                         <h4>fulano</h4>
                         <p>Anestesiologia</p>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
-        
-     <section id="avaliacoes" class="section-card"> <div class="container">
-        <h2>Avaliações (34)</h2>
-        
-        <div class="reviews-list">
-            
-            <div class="review-item">
-                <img src="imagens/Joao-henrique.png" alt="Cliente Carlos Alberto">
-                <div class="review-content">
-                    <div class="review-stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <h4>Carlos Alberto</h4>
-                    <p>Atendimento excepcional! A equipe foi muito cuidadosa e atenciosa com meu pet.</p>
-                </div>
-            </div>
-            
-            <div class="review-item">
-                <img src="imagens/Neymar_Jr.png" alt="Cliente Neymar Jr">
-                <div class="review-content">
-                    <div class="review-stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <h4>Neymar Jr</h4>
-                    <p>Não poderia estar mais feliz com o serviço desta clínica. Profissionais qualificados e atenciosos.</p>
-                </div>
-            </div>
-            
-            <div class="review-item">
-                <img src="imagens/Josseana_da_silva.png" alt="Cliente Josseana da Silva">
-                <div class="review-content">
-                    <div class="review-stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <h4>Josseana da Silva</h4>
-                    <p>Excelente clínica! Desde o primeiro contato, fui atendido com profissionalismo e gentileza.</p>
-                </div>
-            </div>
-            
-            <div class="review-item">
-                <img src="imagens/Joao-henrique.png" alt="Cliente João Henrique"> <div class="review-content">
-                    <div class="review-stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <h4>João Henrique</h4>
-                    <p>Atendimento de primeira, cuidam muito bem dos animais e sempre explicam tudo com clareza.</p>
-                </div>
-            </div>
-            
-            <div class="review-item">
-                <img src="imagens/Luiz-Jr.png" alt="Cliente Adamilton Jr"> <div class="review-content">
-                    <div class="review-stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <h4>Adamilton Jr</h4>
-                    <p>A clínica é muito bem equipada, e os profissionais são incríveis, mas o tempo de espera poderia ser menor.</p>
-                </div>
-            </div>
-            
-            <div class="review-item">
-                <img src="imagens/Luciana-da-silva.png" alt="Cliente Luciana da Silva"> <div class="review-content">
-                    <div class="review-stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <h4>Luciana da Silva</h4>
-                    <p>Profissionais capacitados e atenciosos, meu gato recebeu o melhor cuidado. Recomendo muito!</p>
-                </div>
-            </div>
-            
-             <div class="review-item">
-                <img src="imagens/Matheus-Brito.png" alt="Cliente 7">
-                <div class="review-content">
-                    <div class="review-stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <h4>Matheus Brito</h4>
-                    <p>A equipe é super dedicada e o ambiente é acolhedor, perfeito para quem se importa com o bem-estar do pet.</p>
-                </div>
-            </div>
-             <div class="review-item">
-                <img src="imagens/Luiz-Jr.png" alt="Cliente 8">
-                <div class="review-content">
-                    <div class="review-stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <h4>Luiz Jr</h4>
-                    <p>Atendimento excelente e muito atencioso! Meu pet recebeu todo o cuidado necessário e ficou ótimo.</p>
-                </div>
-            </div>
-             <div class="review-item">
-                <img src="imagens/Clareane-da-silva.png" alt="Cliente 9">
-                <div class="review-content">
-                    <div class="review-stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <h4>Clareane da Silva</h4>
-                    <p>Fiquei satisfeita com o atendimento, mas achei os preços um pouco altos para alguns serviços..</p>
-                </div>
-            </div>
-            
-        </div>
-        
-      <div class="pagination-controls">
-            <button class="page-nav-btn" id="prev-page-btn" aria-label="Página anterior">
-                <i class="fas fa-arrow-left"></i>
-            </button>
-            <span class="current-page-display">1</span>
-            <button class="page-nav-btn" id="next-page-btn" aria-label="Próxima página">
-                <i class="fas fa-arrow-right"></i>
-            </button>
-        </div>
-        
-    </div>
-</section>
 
-        <section id="contato" class="section-padding-light"> <div class="container contact-container">
+        <section id="avaliacoes" class="section-card">
+            <div class="container">
+                <h2>Avaliações (34)</h2>
+
+                <div class="reviews-list">
+
+                    <div class="review-item">
+                        <img src="imagens/Carlos_alberto.png" alt="Cliente Carlos Alberto">
+                        <div class="review-content">
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <h4>Carlos Alberto</h4>
+                            <p>Atendimento excepcional! A equipe foi muito cuidadosa e atenciosa com meu pet.</p>
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <img src="imagens/Neymar_Jr.png" alt="Cliente Neymar Jr">
+                        <div class="review-content">
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <h4>Neymar Jr</h4>
+                            <p>Não poderia estar mais feliz com o serviço desta clínica. Profissionais qualificados e
+                                atenciosos.</p>
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <img src="imagens/Josseana_da_silva.png" alt="Cliente Josseana da Silva">
+                        <div class="review-content">
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <h4>Josseana da Silva</h4>
+                            <p>Excelente clínica! Desde o primeiro contato, fui atendido com profissionalismo e
+                                gentileza.</p>
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <img src="imagens/Joao-henrique.png" alt="Cliente João Henrique">
+                        <div class="review-content">
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <h4>João Henrique</h4>
+                            <p>Atendimento de primeira, cuidam muito bem dos animais e sempre explicam tudo com clareza.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <img src="imagens/Adamilton-Jr.png" alt="Cliente Adamilton Jr">
+                        <div class="review-content">
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i>
+                            </div>
+                            <h4>Adamilton Jr</h4>
+                            <p>A clínica é muito bem equipada, e os profissionais são incríveis, mas o tempo de espera
+                                poderia ser menor.</p>
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <img src="imagens/Luciana-da-silva.png" alt="Cliente Luciana da Silva">
+                        <div class="review-content">
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <h4>Luciana da Silva</h4>
+                            <p>Profissionais capacitados e atenciosos, meu gato recebeu o melhor cuidado. Recomendo
+                                muito!</p>
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <img src="imagens/Matheus-Brito.png" alt="Cliente 7">
+                        <div class="review-content">
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <h4>Matheus Brito</h4>
+                            <p>A equipe é super dedicada e o ambiente é acolhedor, perfeito para quem se importa com o
+                                bem-estar do pet.</p>
+                        </div>
+                    </div>
+                    <div class="review-item">
+                        <img src="imagens/Luiz-Jr.png" alt="Cliente 8">
+                        <div class="review-content">
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <h4>Luiz Jr</h4>
+                            <p>Atendimento excelente e muito atencioso! Meu pet recebeu todo o cuidado necessário e
+                                ficou ótimo.</p>
+                        </div>
+                    </div>
+                    <div class="review-item">
+                        <img src="imagens/Clareane-da-silva.png" alt="Cliente 9">
+                        <div class="review-content">
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <h4>Clareane da Silva</h4>
+                            <p>Fiquei satisfeita com o atendimento, mas achei os preços um pouco altos para alguns
+                                serviços..</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pagination-controls">
+                    <button class="page-nav-btn" id="prev-page-btn" aria-label="Página anterior">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <span class="current-page-display">1</span>
+                    <button class="page-nav-btn" id="next-page-btn" aria-label="Próxima página">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contato" class="section-padding-light">
+            <div class="container contact-container">
                 <div class="contact-info">
                     <img src="/imagens/mapa_localização.png" alt="Mapa da localização" class="map">
                     <div class="info-item">
@@ -271,28 +292,30 @@
                     </div>
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>PindoramaClinica</span> </div>
+                        <span>PindoramaClinica</span>
+                    </div>
                 </div>
                 <form class="contact-form" action="#" method="POST">
                     <label for="Nome">Nome</label>
                     <input type="Nome" id="Nome" name="Nome" required>
-                   
+
                     <label for="Sobrenome">Sobrenome</label>
                     <input type="Sobrenome" id="Sobrenome" name="Sobrenome" required>
-                   
+
                     <label for="email">E-mail</label>
                     <input type="email" id="email" name="email" required>
-                    
+
                     <label for="mensagem">Mensagem</label>
                     <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-                    
+
                     <button type="submit" class="btn">ENVIAR</button>
                 </form>
             </div>
         </section>
     </main>
 
-    <footer> <div class="container footer-content">
+    <footer>
+        <div class="container footer-content">
             <div class="footer-logo">
                 <img src="imagens/logo.png" alt="Pindorama Pets Logo">
             </div>
@@ -317,7 +340,8 @@
                 <div class="social-icons">
                     <a href="/imagens/WhatsApp.png"><i class="fab fa-whatsapp"></i></a>
                     <a href="/imagens/instagram.png"><i class="fab fa-instagram"></i></a>
-                    <a href="/imagens/facebook.png"><i class="fab fa-facebook-f"></i></a> </div>
+                    <a href="/imagens/facebook.png"><i class="fab fa-facebook-f"></i></a>
+                </div>
             </div>
         </div>
         <div class="footer-bottom">
@@ -328,4 +352,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
