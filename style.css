@@ -451,7 +451,7 @@ header .nav-menu li a:focus {
 }
 
 .service-item img {
-    width: 40%;
+    width: 30%;
     max-width: 400px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -695,7 +695,7 @@ footer {
 }
 
 .footer-logo img {
-    width: 240px;
+    width: 200px;
     margin-bottom: 20px;
 }
 
