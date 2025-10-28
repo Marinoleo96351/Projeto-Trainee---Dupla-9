@@ -635,6 +635,9 @@ header .nav-menu li a:focus {
     margin-bottom: 15px;
     font-size: 1rem;
     color: var(--cor-texto-principal);
+}
+
+.contact-info p {
     font-style: italic;
 }
 
