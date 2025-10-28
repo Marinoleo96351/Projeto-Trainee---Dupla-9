@@ -757,13 +757,15 @@ footer {
     font-size: 1.25rem;
     margin-left: 0;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 120px
 }
 
 #slide-vacinacao .slide-content .btn {
     height: 72px;
     background-color: #F8F8FF;
     color: var(--cor-bloco-escuro);
+    margin-left: 450px;
+    margin-top: 60px;
 }
 #slide-vacinacao .slide-content .btn:hover {
     background-color: #e9e9f2;
