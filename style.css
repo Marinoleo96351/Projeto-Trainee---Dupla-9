@@ -8,6 +8,18 @@
 }
 
 :root {
+<<<<<<< HEAD
+    --cor-fundo-claro: #E2F5FA;
+    --cor-fundo-card: #FFFFFF;
+    --cor-bloco-medio: #89C5D5;
+     --cor-bloco-escuro: #0F637A;
+    --cor-texto-principal: #063643;
+    --cor-texto-titulo: #063643;
+    --cor-texto-claro: #FFFFFF;
+    --cor-borda-header: #E0F7FA;
+    --cor-borda-card: #E0E0E0;
+    --cor-amarelo-star: #FFD700;
+=======
     --cor-fundo-claro: #EBFBFF;
     --cor-fundo-card: #FFFFFF;
     --cor-bloco-medio: #7BC1CA;
@@ -18,6 +30,7 @@
     --cor-borda-header: #E0F7FA;
     --cor-borda-card: #E0E0E0;
     --cor-amarelo-star: #FFD700;
+>>>>>>> ee3ca694e177154b8be79a91691dc6cd61c54ef0
 }
 
 body {
