@@ -628,6 +628,7 @@ header .nav-menu li a:focus {
     color: var(--cor-texto-principal);
 }
 
+
 .contact-info .info-item i {
     font-size: 1.4rem;
     color: var(--cor-bloco-escuro);
