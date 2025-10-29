@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Poppins, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -11,9 +11,9 @@
     --cor-fundo-claro: #EBFBFF;
     --cor-fundo-card: #FFFFFF;
     --cor-bloco-medio: #7BC1CA;
-    --cor-bloco-escuro: #0F637A;
-    --cor-texto-principal: #063643;
-    --cor-texto-titulo: #063643;
+    --cor-bloco-escuro: #2A5A62;
+    --cor-texto-principal: #3f3f3f;
+    --cor-texto-titulo: #3a6870;
     --cor-texto-claro: #FFFFFF;
     --cor-borda-header: #E0F7FA;
     --cor-borda-card: #E0E0E0;
@@ -21,7 +21,7 @@
 }
 
 body {
-    background-color: #E2F5FA;
+    background-color: var(--cor-fundo-claro);
     color: var(--cor-texto-principal);
     font-size: 16px;
 }
@@ -32,30 +32,21 @@ body {
     padding: 0 20px;
 }
 
-
-.container h3{
-    color: #063643
-}
-
-.about-text h3{
-    color: #063643
-}
-
 .section-padding {
     padding: 60px 0;
-    background-color: #89C5D5;
+    background-color: var(--cor-bloco-medio);
     background-image: url('img/background-pattern.png');
     background-repeat: repeat;
 }
 
 .section-padding-light {
     padding: 60px 0;
-    background-color: #E2F5FA;
+    background-color: var(--cor-fundo-claro);
 }
 
 .section-padding-dark {
     padding: 60px 0;
-    background-color: #89C5D5;
+    background-color: var(--cor-bloco-medio);
     color: var(--cor-texto-claro);
     background-image: url('img/background-pattern.png');
     background-repeat: repeat;
@@ -63,7 +54,7 @@ body {
 
 h2 {
     font-size: 2.2rem;
-    color: #063643;
+    color: var(--cor-texto-titulo);
     margin-bottom: 40px;
     text-align: center;
     font-weight: 600;
@@ -424,14 +415,14 @@ header .nav-menu li a:focus {
 }
 
 #sobre-nos .about-text h3 {
-    color: #063643;
+    color: var(--cor-bloco-escuro);
     font-size: 2.2rem;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
 #sobre-nos .about-text p {
-    color: #063643;
+    color: var(--cor-bloco-escuro);
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -451,7 +442,7 @@ header .nav-menu li a:focus {
 }
 
 .service-item img {
-    width: 30%;
+    width: 40%;
     max-width: 400px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -637,10 +628,6 @@ header .nav-menu li a:focus {
     color: var(--cor-texto-principal);
 }
 
-.contact-info p {
-    font-style: italic;
-}
-
 .contact-info .info-item i {
     font-size: 1.4rem;
     color: var(--cor-bloco-escuro);
@@ -674,7 +661,6 @@ header .nav-menu li a:focus {
 .contact-form .btn {
     align-self: flex-start;
     width: auto;
-    background-color: #0F637A;
 }
 
 footer {
@@ -695,7 +681,7 @@ footer {
 }
 
 .footer-logo img {
-    width: 200px;
+    width: 240px;
     margin-bottom: 20px;
 }
 
@@ -771,15 +757,15 @@ footer {
     font-size: 1.25rem;
     margin-left: 0;
     margin-right: auto;
-    margin-top: 120px
+    margin-top: 120px; /* Increased margin-top */
 }
 
 #slide-vacinacao .slide-content .btn {
     height: 72px;
     background-color: #F8F8FF;
     color: var(--cor-bloco-escuro);
-    margin-left: 450px;
-    margin-top: 60px;
+    margin-left: 0; /* Adjusted from 450px to 0 */
+    margin-top: 60px; /* Adjusted margin-top */
 }
 #slide-vacinacao .slide-content .btn:hover {
     background-color: #e9e9f2;
@@ -798,6 +784,7 @@ footer {
     height: 62px;
     background-color: var(--cor-fundo-card);
     color: var(--cor-bloco-escuro);
+    margin-top: 40px; /* Adjusted margin-top */
 }
 #slide-adocao .slide-content .btn:hover {
     background-color: #f1f1f1;
@@ -832,6 +819,7 @@ footer {
     height: 72px;
     background-color: var(--cor-bloco-escuro);
     color: var(--cor-texto-claro);
+    margin-top: 40px; /* Adjusted margin-top */
 }
 #slide-banho-tosa .slide-content .btn:hover {
     background-color: #3a7c88;
